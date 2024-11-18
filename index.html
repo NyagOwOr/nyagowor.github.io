@@ -74,6 +74,55 @@
             animation: rotate 5s linear infinite;
         }
 
+        .social-icons {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .social-icons img {
+            width: 50px;
+            height: 50px;
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+
+        .social-icons img:hover {
+            transform: scale(1.2);
+        }
+
+        .gif-gallery {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .gif-gallery img {
+            width: 100px;
+            height: auto;
+            border: 2px solid lime;
+            border-radius: 10px;
+        }
+
+        .template-links {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .template-links a {
+            color: cyan;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .template-links a:hover {
+            text-shadow: 1px 1px magenta;
+            color: lime;
+        }
+
         @keyframes rotate {
             from {
                 transform: rotate(0deg);
@@ -93,11 +142,40 @@
         <div class="rotating-image"></div>
         <a href="#" class="button">Click Me!</a>
         <p>Check out my <a href="https://example.com" target="_blank" style="color: yellow;">other cool stuff</a>.</p>
+        <div class="gif-gallery">
+            <img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" alt="Cat GIF">
+            <img src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif" alt="Dancing Baby GIF">
+            <img src="https://media.giphy.com/media/l0MYydaivRk9SLDiQ/giphy.gif" alt="Smiley Face GIF">
+        </div>
+        <div class="social-icons">
+            <a href="https://twitter.com" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/en/6/60/Twitter_Logo_as_of_2021.svg" alt="Twitter Logo" />
+            </a>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Discord_Logo.svg" alt="Discord Logo" onclick="showDiscordUsername()" />
+            <a href="https://instagram.com" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo" />
+            </a>
+        </div>
+        <div class="template-links">
+            <p><a href="https://geocities.com" target="_blank">Visit My Geocities</a></p>
+            <p><a href="https://neopets.com" target="_blank">Play Neopets!</a></p>
+            <p><a href="https://myspace.com" target="_blank">Check Out My MySpace</a></p>
+        </div>
+    </div>
+    <div id="discord-username" class="footer" style="display: none;">
+        <p>My Discord Username: <strong>RetroMaster#1234</strong></p>
     </div>
     <div class="footer">
         <p>© 1999 My Webpage. All rights reserved.</p>
         <p>Made with 🖤 and HTML.</p>
     </div>
+
+    <script>
+        function showDiscordUsername() {
+            const usernameElement = document.getElementById('discord-username');
+            usernameElement.style.display = 'block';
+        }
+    </script>
 </body>
 
 </html>
