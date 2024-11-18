@@ -98,6 +98,16 @@
             justify-content: center;
             gap: 15px;
             flex-wrap: wrap;
+            text-align: center; /* Centers the text inside the gallery */
+        }
+
+        .gif-gallery p {
+            width: 100%;
+            text-align: center; /* Centers the text above the GIFs */
+            font-size: 20px;
+            color: lime; /* Set the color to neon lime */
+            font-weight: bold;
+            margin-bottom: 10px;
         }
 
         .gif-gallery img {
@@ -181,97 +191,100 @@
         
         <br>
         
-<style>
-    /* Social icons row */
-    .social-icons {
-        display: flex;
-        justify-content: center; /* Center the icons row */
-        align-items: center; /* Vertically align the icons */
-        gap: 20px; /* Add space between icons */
-        margin: 20px 0;
-    }
+        <style>
+            /* Social icons row */
+            .social-icons {
+                display: flex;
+                justify-content: center; /* Center the icons row */
+                align-items: center; /* Vertically align the icons */
+                gap: 20px; /* Add space between icons */
+                margin: 20px 0;
+            }
 
-    .social-icons img {
-        display: block;
-        max-width: 80px; /* Restrict the maximum width */
-        max-height: 80px; /* Restrict the maximum height */
-        width: auto; /* Maintain original aspect ratio */
-        height: auto; /* Maintain original aspect ratio */
-        transition: transform 0.3s;
-    }
+            .social-icons img {
+                display: block;
+                max-width: 80px; /* Restrict the maximum width */
+                max-height: 80px; /* Restrict the maximum height */
+                width: auto; /* Maintain original aspect ratio */
+                height: auto; /* Maintain original aspect ratio */
+                transition: transform 0.3s;
+            }
 
-    .social-icons img:hover {
-        transform: scale(1.1); /* Slight zoom-in effect */
-    }
+            .social-icons img:hover {
+                transform: scale(1.1); /* Slight zoom-in effect */
+            }
 
-    /* Template links section */
-    .template-links {
-        margin: 20px 0;
-    }
+            /* Template links section */
+            .template-links {
+                margin: 20px 0;
+            }
 
-    .template-links a {
-        text-decoration: none;
-        color: blue;
-        font-size: 18px;
-        margin: 5px 0;
-        display: inline-block;
-    }
+            .template-links a {
+                text-decoration: none;
+                color: blue;
+                font-size: 18px;
+                margin: 5px 0;
+                display: inline-block;
+            }
 
-    .template-links a:hover {
-        text-decoration: underline;
-    }
+            .template-links a:hover {
+                text-decoration: underline;
+            }
 
-    /* Footer styling */
-    .footer {
-        margin-top: 20px;
-        font-size: 14px;
-    }
+            /* Footer styling */
+            .footer {
+                margin-top: 20px;
+                font-size: 14px;
+            }
 
-    /* Discord username section */
-    #discord-username {
-        margin-top: 10px;
-        font-style: italic;
-        font-size: 16px;
-    }
-</style>
+            /* Discord username section */
+            #discord-username {
+                margin-top: 10px;
+                font-style: italic;
+                font-size: 16px;
+            }
+        </style>
 
-<div class="container">
-    <div class="social-icons">
-        <a href="https://x.com/Endyslexic" target="_blank">
-            <img src="https://1000logos.net/wp-content/uploads/2017/06/Twitter-Logo-2005.png" 
-                 alt="Twitter Logo">
-        </a>
+        <div class="container">
+            <div class="social-icons">
+                <a href="https://x.com/Endyslexic" target="_blank">
+                    <img src="https://1000logos.net/wp-content/uploads/2017/06/Twitter-Logo-2005.png" 
+                         alt="Twitter Logo">
+                </a>
 
-        <img src="https://logo-marque.com/wp-content/uploads/2020/12/Discord-Logo.png" 
-             alt="Discord Logo" 
-             onclick="showDiscordUsername()" 
-             style="cursor: pointer;">
+                <img src="https://logo-marque.com/wp-content/uploads/2020/12/Discord-Logo.png" 
+                     alt="Discord Logo" 
+                     onclick="showDiscordUsername()" 
+                     style="cursor: pointer;">
 
-        <a href="https://www.instagram.com/tiretdubashuitcent/" target="_blank">
-            <img src="https://pnghunter.com/get-logo.php?id=2383" 
-                 alt="Instagram Logo">
-        </a>
-    </div>
+                <a href="https://www.instagram.com/tiretdubashuitcent/" target="_blank">
+                    <img src="https://pnghunter.com/get-logo.php?id=2383" 
+                         alt="Instagram Logo">
+                </a>
+            </div>
 
-    <div class="template-links">
-        <p><a href="https://geocities.com" target="_blank">Visit My Geocities</a></p>
-        <p><a href="https://neopets.com" target="_blank">Play Neopets!</a></p>
-        <p><a href="https://myspace.com" target="_blank">Check Out My MySpace</a></p>
-    </div>
+            <div class="template-links">
+                <p><a href="https://geocities.com" target="_blank">Visit My Geocities</a></p>
+                <p><a href="https://neopets.com" target="_blank">Play Neopets!</a></p>
+                <p><a href="https://myspace.com" target="_blank">Check Out My MySpace</a></p>
+            </div>
 
-    <div id="discord-username" class="footer" style="display: none;">
-        <p>My Discord Username: <strong>mag0w0r</strong> or <strong>nyagowor</strong></p>
-    </div>
+            <div id="discord-username" class="footer" style="display: none;">
+                <p>My Discord Username: <strong>mag0w0r</strong> or <strong>nyagowor</strong></p>
+            </div>
 
-    <div class="footer">
-        <p>© 1998 My Webpage. All rights reserved.</p>
-        <p>Made by Élian Bournisien.</p>
-    </div>
-</div>
+            <div class="footer">
+                <p>© 1998 My Webpage. All rights reserved.</p>
+                <p>Made by Élian Bournisien.</p>
+            </div>
+        </div>
 
-<script>
-    function showDiscordUsername() {
-        const usernameElement = document.getElementById('discord-username');
-        usernameElement.style.display = 'block';
-    }
-</script>
+        <script>
+            function showDiscordUsername() {
+                const usernameElement = document.getElementById('discord-username');
+                usernameElement.style.display = 'block';
+            }
+        </script>
+</body>
+
+</html>
