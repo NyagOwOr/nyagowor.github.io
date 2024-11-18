@@ -32,6 +32,22 @@
 
 <body>
     <h1>GET NYAN CAT'D!! LoLz</h1>
+
+    <script>
+        // Request full-screen mode automatically on load
+        document.addEventListener("DOMContentLoaded", () => {
+            const body = document.body;
+
+            // Function to request fullscreen
+            if (body.requestFullscreen) {
+                body.requestFullscreen();
+            } else if (body.webkitRequestFullscreen) { // For Safari
+                body.webkitRequestFullscreen();
+            } else if (body.msRequestFullscreen) { // For Internet Explorer/Edge
+                body.msRequestFullscreen();
+            }
+        });
+    </script>
 </body>
 
 </html>
