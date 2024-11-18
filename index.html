@@ -172,37 +172,102 @@
         <div class="gif-gallery">
             <img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" alt="Cat GIF">
             <img src="https://upload.wikimedia.org/wikipedia/en/0/04/Badgers_Badgers.gif" alt="Dancing Badgers GIF">
-            <img src="https://media.giphy.com/media/l0MYydaivRk9SLDiQ/giphy.gif" alt="Smiley Face GIF">
+            <img src="https://media0.giphy.com/media/U4TpDjFPVEjkI/200w.gif?cid=6c09b952ma4e07378k1tu71kfmqpu88w4jpkofs40z0v4y7b&ep=v1_gifs_search&rid=200w.gif&ct=g" alt="Smiley Face GIF">
         </div>
-        <div class="social-icons">
-            <a href="https://twitter.com" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/en/6/60/Twitter_Logo_as_of_2021.svg" alt="Twitter Logo" />
-            </a>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Discord_Logo.svg" alt="Discord Logo" onclick="showDiscordUsername()" />
-            <a href="https://instagram.com" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo" />
-            </a>
-        </div>
-        <div class="template-links">
-            <p><a href="https://geocities.com" target="_blank">Visit My Geocities</a></p>
-            <p><a href="https://neopets.com" target="_blank">Play Neopets!</a></p>
-            <p><a href="https://myspace.com" target="_blank">Check Out My MySpace</a></p>
-        </div>
+        
+        <br>
+        
+<style>
+    /* Social icons row */
+    .social-icons {
+        display: flex;
+        justify-content: center; /* Center the icons row */
+        align-items: center; /* Vertically align the icons */
+        gap: 20px; /* Add space between icons */
+        margin: 20px 0;
+    }
+
+    .social-icons img {
+        display: block;
+        max-width: 80px; /* Restrict the maximum width */
+        max-height: 80px; /* Restrict the maximum height */
+        width: auto; /* Maintain original aspect ratio */
+        height: auto; /* Maintain original aspect ratio */
+        transition: transform 0.3s;
+    }
+
+    .social-icons img:hover {
+        transform: scale(1.1); /* Slight zoom-in effect */
+    }
+
+    /* Template links section */
+    .template-links {
+        margin: 20px 0;
+    }
+
+    .template-links a {
+        text-decoration: none;
+        color: blue;
+        font-size: 18px;
+        margin: 5px 0;
+        display: inline-block;
+    }
+
+    .template-links a:hover {
+        text-decoration: underline;
+    }
+
+    /* Footer styling */
+    .footer {
+        margin-top: 20px;
+        font-size: 14px;
+    }
+
+    /* Discord username section */
+    #discord-username {
+        margin-top: 10px;
+        font-style: italic;
+        font-size: 16px;
+    }
+</style>
+
+<div class="container">
+    <div class="social-icons">
+        <a href="https://x.com/Endyslexic" target="_blank">
+            <img src="https://1000logos.net/wp-content/uploads/2017/06/Twitter-Logo-2005.png" 
+                 alt="Twitter Logo">
+        </a>
+
+        <img src="https://logo-marque.com/wp-content/uploads/2020/12/Discord-Logo.png" 
+             alt="Discord Logo" 
+             onclick="showDiscordUsername()" 
+             style="cursor: pointer;">
+
+        <a href="https://www.instagram.com/tiretdubashuitcent/" target="_blank">
+            <img src="https://pnghunter.com/get-logo.php?id=2383" 
+                 alt="Instagram Logo">
+        </a>
     </div>
+
+    <div class="template-links">
+        <p><a href="https://geocities.com" target="_blank">Visit My Geocities</a></p>
+        <p><a href="https://neopets.com" target="_blank">Play Neopets!</a></p>
+        <p><a href="https://myspace.com" target="_blank">Check Out My MySpace</a></p>
+    </div>
+
     <div id="discord-username" class="footer" style="display: none;">
-        <p>My Discord Username: <strong>RetroMaster#1234</strong></p>
+        <p>My Discord Username: <strong>mag0w0r</strong> or <strong>nyagowor</strong></p>
     </div>
+
     <div class="footer">
-        <p>© 1999 My Webpage. All rights reserved.</p>
-        <p>Made with 🖤 and HTML.</p>
+        <p>© 1998 My Webpage. All rights reserved.</p>
+        <p>Made by Élian Bournisien.</p>
     </div>
+</div>
 
-    <script>
-        function showDiscordUsername() {
-            const usernameElement = document.getElementById('discord-username');
-            usernameElement.style.display = 'block';
-        }
-    </script>
-</body>
-
-</html>
+<script>
+    function showDiscordUsername() {
+        const usernameElement = document.getElementById('discord-username');
+        usernameElement.style.display = 'block';
+    }
+</script>
