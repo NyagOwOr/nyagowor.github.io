@@ -7,7 +7,9 @@
     <title>Webcore Retro Page</title>
     <style>
         body {
-            background-color: black;
+            background-image: url('https://www.techspot.com/images2/news/bigimage/2016/10/2016-10-28-image.gif');
+            background-size: cover;
+            background-position: center;
             color: lime;
             font-family: "Comic Sans MS", sans-serif;
             margin: 0;
@@ -27,13 +29,7 @@
         .container {
             width: 90%;
             max-width: 800px;
-            background: repeating-linear-gradient(
-                45deg,
-                black,
-                black 10px,
-                purple 10px,
-                purple 20px
-            );
+            background: rgba(0, 0, 0, 0.5); /* Slight transparency to let the background show through */
             border: 3px dashed lime;
             padding: 20px;
             text-align: center;
@@ -68,10 +64,11 @@
             margin: 20px auto;
             width: 100px;
             height: 100px;
-            background: url('https://upload.wikimedia.org/wikipedia/commons/3/38/Rotating_earth_%28large%29.gif');
+            background: url('https://web.archive.org/web/20091026140123/http://www.geocities.com/silverspider73/kirbywalkright.gif');
             background-size: cover;
-            border-radius: 50%;
+
             animation: rotate 5s linear infinite;
+            animation-direction: reverse; 
         }
 
         .social-icons {
@@ -123,6 +120,28 @@
             color: lime;
         }
 
+        .presentation-text {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            margin-top: 30px;
+            border: 2px dashed magenta;
+            border-radius: 10px;
+            color: cyan;
+            font-size: 16px;
+            font-family: "Arial", sans-serif;
+            text-align: left;
+        }
+
+        .presentation-text h2 {
+            color: yellow;
+            text-shadow: 1px 1px lime;
+        }
+
+        .presentation-text p {
+            margin-top: 10px;
+            line-height: 1.6;
+        }
+
         @keyframes rotate {
             from {
                 transform: rotate(0deg);
@@ -136,15 +155,23 @@
 </head>
 
 <body>
-    <h1>Welcome to My Retro Webcore Page!</h1>
+    <h1>Welcome to My World Wide Web Server !</h1>
     <div class="container">
-        <p>This is my awesome 90s-style website. Isn't it rad?</p>
+        <p>I'm NyagOwOr, a french IT student, who'se passionate about everything relative to computers !</p>
         <div class="rotating-image"></div>
         <a href="#" class="button">Click Me!</a>
         <p>Check out my <a href="https://example.com" target="_blank" style="color: yellow;">other cool stuff</a>.</p>
+
+        <div class="presentation-text">
+            <h2>About Me :</h2>
+            <p>Hello World! I love Minecraft, Splatoon, and all sorts of similar games :) I'm also very interested in all things science, such as geology and physics :p</p>
+            <p>I love older tech, like old phones and simili-phones (iPods and such), or consoles (DS, xBox 360 and the Wii).</p>
+            <p>So, ready your VHS, turn on your Fax Machine, beep those boops and travel through the wonders of the internet of the past! We're back! Back from the future!</p> <img src="https://web.archive.org/web/20000919065940/http://www.geocities.com:80/WestHollywood/Heights/4928/delorean.gif" alt="Delorean">
+        </div>
+
         <div class="gif-gallery">
             <img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" alt="Cat GIF">
-            <img src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif" alt="Dancing Baby GIF">
+            <img src="https://upload.wikimedia.org/wikipedia/en/0/04/Badgers_Badgers.gif" alt="Dancing Badgers GIF">
             <img src="https://media.giphy.com/media/l0MYydaivRk9SLDiQ/giphy.gif" alt="Smiley Face GIF">
         </div>
         <div class="social-icons">
