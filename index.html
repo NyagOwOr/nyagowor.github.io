@@ -1,1 +1,103 @@
-<p>test</p>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webcore Retro Page</title>
+    <style>
+        body {
+            background-color: black;
+            color: lime;
+            font-family: "Comic Sans MS", sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h1 {
+            color: cyan;
+            text-shadow: 2px 2px magenta;
+            margin: 20px 0;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 800px;
+            background: repeating-linear-gradient(
+                45deg,
+                black,
+                black 10px,
+                purple 10px,
+                purple 20px
+            );
+            border: 3px dashed lime;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .button {
+            background: linear-gradient(to bottom, lime, green);
+            border: 2px solid magenta;
+            padding: 10px 20px;
+            font-size: 20px;
+            color: black;
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-block;
+            margin: 20px 0;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background: magenta;
+            color: lime;
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 12px;
+            color: white;
+            text-shadow: 1px 1px lime;
+        }
+
+        .rotating-image {
+            margin: 20px auto;
+            width: 100px;
+            height: 100px;
+            background: url('https://upload.wikimedia.org/wikipedia/commons/3/38/Rotating_earth_%28large%29.gif');
+            background-size: cover;
+            border-radius: 50%;
+            animation: rotate 5s linear infinite;
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Welcome to My Retro Webcore Page!</h1>
+    <div class="container">
+        <p>This is my awesome 90s-style website. Isn't it rad?</p>
+        <div class="rotating-image"></div>
+        <a href="#" class="button">Click Me!</a>
+        <p>Check out my <a href="https://example.com" target="_blank" style="color: yellow;">other cool stuff</a>.</p>
+    </div>
+    <div class="footer">
+        <p>© 1999 My Webpage. All rights reserved.</p>
+        <p>Made with 🖤 and HTML.</p>
+    </div>
+</body>
+
+</html>
